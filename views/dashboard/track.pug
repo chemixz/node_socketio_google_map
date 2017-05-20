@@ -1,0 +1,12 @@
+extends ./layout.pug
+block contenido
+	center
+		h1 track del Proyecto
+	center
+		input(type="button" value="Valera" onclick="setMarker(7.771357200000001 , -72.22614659999999 , 'Valera' , 'Ciudad de compromisos')")
+		input(type="button" value="Merida" onclick="setMarker(8.5833333333333 , -71.133333333333 , 'Merida' , 'Cudad del frio')")
+		input(type="button" value="Barquisimeto" onclick="setMarker(10.066666666667 , -69.333333333333 , 'Barquisimeto' , 'Ciudad llana')")
+		input(type="button" value="Valencia" onclick="setMarker(10.166666666667 ,-68 , 'Valencia' , 'Ciudad agua')")
+		
+	div(id="map")
+	script(src="/js/client.js")

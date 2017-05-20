@@ -1,0 +1,20 @@
+doctype html
+html
+	head
+		title Test GPS nodejs
+		meta(chartset="utf-8")
+		link(href="/css/bootstrap.min.css" rel="stylesheet")
+		link(href="/css/ownstyle.css" rel="stylesheet")
+		script(src="/js/jquery.js")
+		script(src="/socket.io/socket.io.js")
+		script(src="/js/handlebars.js")
+	body
+		nav(class="large-padding black_g ")
+			ul
+				li
+					a(href="/") Index
+		div(class="container-fluid")
+			block contenido
+		
+		script(src="/js/bootstrap.js")
+		script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBV8ymgn6-VySpt5nhiPKsf0Ws7kfC2Z5U&callback=initMap" type="text/javascript")
